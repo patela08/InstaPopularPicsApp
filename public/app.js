@@ -1,15 +1,18 @@
-(function(){
-    var app = angular.module('photoGal',['ngRoute','ngResource']);
+(function () {
+    'use strict';
 
-    app.config(['$routeProvider',rProvide]);
-
-    function rProvide($routeProvider){
-        $routeProvider
-            .when('/Gallery',{
-                templateUrl: 'view/gallery.view.html',
-                controller: 'GalleryController',
-                controllerAs: 'gCtrl'
-            })
-            .otherwise({redirectTo:'/Gallery'});
-    }
+    angular
+        .module('photoGallery', ['ngRoute', 'ui.bootstrap.tpls', 'bootstrapLightbox'])
+        .config(['$routeProvider', function ($routeProvider) {
+            $routeProvider
+                .when('/gallery', {
+                    templateUrl: 'view/gallery.view.html',
+                    controller: 'GalleryCtrl',
+                    controllerAs: 'Gctrl'
+                })
+                .otherwise({redirectTo: '/gallery'});
+        }])
+        .config(['$qProvider', function ($qProvider) {
+            $qProvider.errorOnUnhandledRejections(false);
+        }]);
 })();

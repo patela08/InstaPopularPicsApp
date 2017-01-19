@@ -1,0 +1,21 @@
+img.main{
+    cursor: pointer ;
+}
+
+.gallery img.main {
+    width: 100%;
+}
+
+.imgInfo {
+    background: #666;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+.avatar {
+    width:40px;
+    margin-right: 10px;
+}
