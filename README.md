@@ -17,4 +17,5 @@ This app shows user's Instagram pictures
 `npm start`
 ## Note
 For the project to run successfully please replace `ACCESSTOKEN_OF_YOUR_ACCOUNT` in `public/controllers/gallery.controller.js` file with your instagram account access_token.
+
 You can get access token on [a link](http://instagram.pixelunion.net/) by entering client Id and client secretkey.
