@@ -9,7 +9,7 @@
             var vm = this;
             vm.images = [];
             vm.imgArray = [];
-            vm.url = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=1520124980.1677ed0.a669922836484908be6ece6091914a0f' ;
+            vm.url = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=ACCESSTOKEN_OF_YOUR_ACCOUNT' ;
             photoFact.fetchPopular(vm.url)
                     .then(function (response) {
                         vm.images = response.data.data;
